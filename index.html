@@ -19,11 +19,11 @@
   <header>
     <nav class="right-align">
       <ul class="sm-show h4 m0 p1">
-        <a href="#!" class=""><li>Home</li></a>
-        <a href="#!" class=""><li>Projects</li></a>
-        <a href="#!" class=""><li>About</li></a>
-        <a href="#!" class=""><li>Skills</li></a>
-        <a href="#!" class=""><li>Contact</li></a>
+        <a href="#home" class=""><li>Home</li></a>
+        <a href="#projects" class=""><li>Projects</li></a>
+        <a href="#about" class=""><li>About</li></a>
+        <a href="#skills" class=""><li>Skills</li></a>
+        <a href="#contact" class=""><li>Contact</li></a>
       </ul>
       <!-- <i id="toggle-menu" class="fa fa-bars sml-hide"></i> -->
       <a id="toggle-menu" class="sm-hide">
@@ -38,10 +38,11 @@
 
 
 
-<!-- HERO PAGE -->
-
-  <div class="hero flex flex-center">
-    <!-- <div class="hero-background"></div> -->
+  <!--////////////////////////////////////
+      HERO PAGE 
+  /////////////////////////////////////-->
+  <a name="home"></a>
+  <div class="hero">
     <div class="shade"></div>
 
     <div class="hero-details">
@@ -56,8 +57,10 @@
 
 
 
-<!-- SOCIAL MEDIA BAR -->
 
+  <!--////////////////////////////////////
+      SOCIAL MEDIA BAR 
+  /////////////////////////////////////-->
   <div class="social-bar">
     <div class="clearfix">
       <div class="sm-col sm-col-12 center">
@@ -82,7 +85,9 @@
 
   <div class="clearfix">
 
-    <!-- SIDE PROFILE -->
+  <!--////////////////////////////////////
+      SIDE PROFILE
+  /////////////////////////////////////-->
     <aside class="md-show md-col md-col-3">
       <div class="side-profile">
         <div class="profile-details">
@@ -102,22 +107,23 @@
     <div class="md-col md-col-9">
 
     
-      <!-- PROJECTS -->
-
+        <!--////////////////////////////////////
+            PROJECTS 
+       /////////////////////////////////////-->
+      <a name="projects"></a>
       <h1 class="section-title">PROJECTS</h1>
       <section class="projects">
+
+        <!--////////////////////////////////////
+            PROJECT 1 
+        /////////////////////////////////////-->
         <article class="clearfix">
-          <div class="lg-flex flex-stretch">
-            <div class="flex-auto">
-              <div class="project-img-wrapper">
-                <img src="images/projects/TranExecApp.png" alt="">
-              </div>
-            </div>
-            <div class=" project-text-wrapper">
+          <div class="lg-col lg-col-5 text-side">
+            <div class="project-text-wrapper">
               <h1 class="project-title">TranExec</h1>
               <div class="project-text">
                 <p>
-                  TranExec is an Executive Coaching Management System, that is used to track participants through a series of coaching session and allows appointments to be made in real-time. TranExec is built on Rails and Backbone.js.
+                  TranExec is an Executive Coaching Management System, that is used to track participants through a series of coaching sessions and allows appointments to be made in real-time. TranExec is built on Rails and Backbone.js.
                 </p>
                 <div class="dev-tools-wrapper center">
                   <span class="devicons devicons-ruby_on_rails h1"></span>
@@ -133,16 +139,20 @@
               </div>
             </div>
           </div>
+          <div class="lg-col lg-col-7">
+            <div class="project-img-wrapper">
+              <img src="images/projects/TranExecApp.png" alt="">
+            </div>
+          </div>
         </article>
 
+        <hr>
 
+        <!--////////////////////////////////////
+            PROJECT 2
+        /////////////////////////////////////-->
         <article class="clearfix">
-          <div class="lg-flex flex-stretch">
-            <div class="flex-auto flex-last">
-              <div class="project-img-wrapper">
-                <img src="images/projects/youngHorts.png" alt="">
-              </div>
-            </div>
+          <div class="lg-col lg-col-5 text-side">
             <div class="project-text-wrapper">
               <h1 class="project-title">YoungHorts</h1>
               <div class="project-text">
@@ -162,16 +172,20 @@
               </div>
             </div>
           </div>
+          <div class="lg-col lg-col-7">
+            <div class="project-img-wrapper">
+              <img src="images/projects/youngHorts.png" alt="">
+            </div>
+          </div>
         </article>
         
+        <hr>
 
+        <!--////////////////////////////////////
+            PROJECT 3
+        /////////////////////////////////////-->
         <article class="clearfix">
-          <div class="lg-flex flex-stretch">
-            <div class="flex-auto">
-              <div class="project-img-wrapper">
-                <img src="images/projects/Airbnb-ish.png" alt="">
-              </div>
-            </div>
+          <div class="lg-col lg-col-5 text-side">
             <div class="project-text-wrapper">
               <h1 class="project-title">Airbnb-ish</h1>
               <div class="project-text">
@@ -191,21 +205,25 @@
               </div>
             </div>
           </div>
+          <div class="lg-col lg-col-7">
+            <div class="project-img-wrapper">
+              <img src="images/projects/Airbnb-ish.png" alt="">
+            </div>
+          </div>
         </article>
 
+        <hr>
 
+        <!--////////////////////////////////////
+            PROJECT 4
+        /////////////////////////////////////-->
         <article class="clearfix">
-          <div class="lg-flex flex-stretch">
-            <div class="flex-auto flex-last">
-              <div class="project-img-wrapper">
-                <img src="images/projects/TicTacToe.png" alt="">
-              </div>
-            </div>
+          <div class="lg-col lg-col-5 text-side">
             <div class="project-text-wrapper">
               <h1 class="project-title">Tic-Tac-Toe</h1>
               <div class="project-text">
                 <p>
-                  My first project on the GA Web Development Imersive program. The task was to build a game of tic-tac-toe using Javascript. Here I work on the game logic and how the user can interact with the website to initiate responses. 
+                  My first project on the GA Web Development Imersive program. The task was to build a game of tic-tac-toe using Javascript. Here I work on the game logic and how the user can interact with the website to initiate responses.
                 </p>
                 <div class="dev-tools-wrapper center">
                   <span class="devicons devicons-javascript_badge h1"></span>
@@ -219,167 +237,234 @@
               </div>
             </div>
           </div>
+          <div class="lg-col lg-col-7">
+            <div class="project-img-wrapper">
+              <img src="images/projects/TicTacToe.png" alt="">
+            </div>
+          </div>
         </article>
 
       </section>
 
 
-      <!-- ABOUT ME -->
-
+        <!--////////////////////////////////////
+            ABOUT ME 
+        /////////////////////////////////////-->
+      <a name="about"></a>
       <h1 class="section-title m0">ABOUT ME</h1>
       <section class="about">
-        <div class="clearfix">
-          <div class="sm-col sm-col-8 bubble p3 justify relative">
-            <!-- <p>
-              I'm an up and coming systems and web designer, keen snowboarder and collector of nationalities.
-            </p>
-            <p>
-              After graduating with a Masters’ Degree in Computer Science from Loughborough University in the UK, I travelled to Canada for 6 months to pursue my enjoyment of snowboarding. Well, things change. That short 6 months turned into 7 years and Canadian permanent residency.
-            </p>
-            <p>
-              Although not the life plan I'd intended, I took on the hospitality industry. Working from the bottom to the top I quickly found myself managing a successful restaurant. And with great power came great responsibility. Not only mastering the client-side interaction of hospitality, I also engaged in people management, scheduling, stock control and day-to-day problem solving.
-            </p>
-            <p>
-              I also advanced my computing skills amidst my exploits behind the bar and in the kitchen. Developing an automated reporting system I reduced office labour costs by $11,500 per month across the chain. I also developed a web-based gift certificate management system to track the sale and redemption of over 120,000 items. In addition, a responsive website was built using the Drupal framework although never implemented due to changes in the company.
-            </p>
-            <p>
-              Now I'm leaping back into an IT career with a jump start from the General Assembly Web Development Immersive program. And now living in Australia. 
-            </p> -->
-            <h2>I’m a web developer who likes it all.</h2>
-            <p>From efficient database design and css styling to API implementation and front-end user interaction. I'm a problem solver looking for opportunities to build web applications; learn new technologies; and construct effective tools for end users.
-            </p>
-          </div>
-        </div>
+            <div class="about-text">
+              <!-- <p>
+                I'm an up and coming systems and web designer, keen snowboarder and collector of nationalities.
+              </p>
+              <p>
+                After graduating with a Masters’ Degree in Computer Science from Loughborough University in the UK, I travelled to Canada for 6 months to pursue my enjoyment of snowboarding. Well, things change. That short 6 months turned into 7 years and Canadian permanent residency.
+              </p>
+              <p>
+                Although not the life plan I'd intended, I took on the hospitality industry. Working from the bottom to the top I quickly found myself managing a successful restaurant. And with great power came great responsibility. Not only mastering the client-side interaction of hospitality, I also engaged in people management, scheduling, stock control and day-to-day problem solving.
+              </p>
+              <p>
+                I also advanced my computing skills amidst my exploits behind the bar and in the kitchen. Developing an automated reporting system I reduced office labour costs by $11,500 per month across the chain. I also developed a web-based gift certificate management system to track the sale and redemption of over 120,000 items. In addition, a responsive website was built using the Drupal framework although never implemented due to changes in the company.
+              </p>
+              <p>
+                Now I'm leaping back into an IT career with a jump start from the General Assembly Web Development Immersive program. And now living in Australia. 
+              </p> -->
+              <h1>I’m a web developer who likes it all.</h1>
+              <p>
+                From efficient database design and CSS styling to API implementation and front-end user interaction. I'm a problem solver looking for opportunities to build web applications; learn new technologies; and construct effective tools for end users.
+              </p>
+              <br>
+
+              <div class="clearfix left-align">
+                <div class="sm-col sm-col-4">
+                  <span class="h2 about-sub-title">Education</span>
+                </div>
+                <div class="sm-col sm-col-8">
+                  <div class="h2">General Assembly</div>
+                  <div class="h4">Web Development Immersive</div>
+                  <p class="h5">May 2015 - July 2015</p>
+
+                  <div class="h2">Loughborough University - UK</div>
+                  <div class="h4">Masters' Computer Science</div>
+                  <p class="h5">October 2001 - July 2006</p>
+                </div>
+              </div>
+
+              <div class="clearfix left-align">
+                <div class="sm-col sm-col-4">
+                  <span class="h2 about-sub-title">Employment</span>
+                </div>
+                <div class="sm-col sm-col-8">
+                  <!-- <div class="h2">Pinnacle People</div>
+                  <div class="h4">Hospitality Specialist</div>
+                  <p class="h5">August 2014 - April 2015</p> -->
+
+                  <div class="h2">Chalkboard Cafe</div>
+                  <div class="h4">Server | Barista | PoS Coordinator</div>
+                  <p class="h5">February 2014 - July 2014</p>
+
+                  <div class="h2">Ric's Grill</div>
+                  <div class="h4">Systems &amp; Web Developer</div>
+                  <p class="h5">April 2008 - November 2013</p>
+
+                  <div class="h2">the mix by Ric's</div>
+                  <div class="h4">Operations Manager</div>
+                  <p class="h5">April 2007 - November 2013</p>
+
+                  <div class="h2">CITB</div>
+                  <div class="h4">IT Coordinator</div>
+                  <p class="h5">September 2004 - July 2006</p>
+                </div>
+              </div>
+
+            </div>
       </section>
 
       
 
-      <!-- SKILLS -->
-
+        <!--////////////////////////////////////
+            SKILLS 
+        /////////////////////////////////////-->
+      <a name="skills"></a>
       <h1 class="section-title">SKILLS</h1>
-      <section class="skills">
 
-
-        <div class="skills-container">
-          
-          <div class="sm-col-6" style="overflow: hidden;">
-
-          <div class="hex">
-            <img src="images/skills/rails-badge.png" alt="">
-            <div class="corner-1"></div>
-            <div class="corner-2"></div>    
-          </div>
-          
-          <div class="hex">
-            <img src="images/skills/html5.png" alt="">
-            <div class="corner-1"></div>
-            <div class="corner-2"></div>    
-          </div> 
-
-
-          <div class="hex">
-            <img src="images/skills/css3.png" alt="">    
-            <div class="corner-1"></div>
-            <div class="corner-2"></div>    
-          </div>  
-          
-          <div class="hex hex-gap">
-            <img src="images/skills/js-badge.png" alt="">        
-            <div class="corner-1"></div>
-            <div class="corner-2"></div>    
-          </div>
-          
-          <div class="hex"> 
-            <img src="images/skills/coffeescript-badge.png" alt="">
-            <div class="corner-1"></div>
-            <div class="corner-2"></div>    
-          </div>
-          
-          <div class="hex">
-            <img src="images/skills/drupal-badge.png" alt="">     
-            <div class="corner-1"></div>
-            <div class="corner-2"></div>    
-          </div>
-          
-          <div class="hex">
-            <img src="images/skills/git-badge.png" alt="">    
-            <div class="corner-1"></div>
-            <div class="corner-2"></div>    
-          </div>
-
-        </div>
-        <div class="sm-col-6" style="overflow: hidden;">
-          
-          <div class="hex">
-            <img src="images/skills/jquery-badge.png" alt="">     
-            <div class="corner-1"></div>
-            <div class="corner-2"></div>    
-          </div>
-          
-          <div class="hex">
-            <img src="images/skills/json-badge.png" alt="">    
-            <div class="corner-1"></div>
-            <div class="corner-2"></div>    
-          </div>
-          
-          <div class="hex">
-            <img src="images/skills/postgresql-badge.png" alt="">    
-            <div class="corner-1"></div>
-            <div class="corner-2"></div>    
-          </div>  
-          
-          <div class="hex">    
-            <img src="images/skills/ruby-badge.png" alt="">    
-            <div class="corner-1"></div>
-            <div class="corner-2"></div>    
-          </div>
-          
-          <div class="hex">   
-            <img src="images/skills/mysql.png" alt="">  
-            <div class="corner-1"></div>
-            <div class="corner-2"></div>    
-          </div>  
-          
-          <div class="hex">   
-            <img src="images/skills/backbone-outline.png" alt="">    
-            <div class="corner-1"></div>
-            <div class="corner-2"></div>    
-          </div>
-          
-          <div class="hex">   
-            <img src="images/skills/php.png" alt="">    
-            <div class="corner-1"></div>
-            <div class="corner-2"></div>    
-          </div>  
-
-        </div>
-          
-          <!-- <div class="hex hex-gap">   
-            <img src="images/skills/rails-badge.png" alt="">
-            <a href="#"></a>    
-            <div class="corner-1"></div>
-            <div class="corner-2"></div>    
-          </div>
-          
-          <div class="hex">   
-            <img src="images/skills/rails-badge.png" alt="">
-            <a href="#"></a>    
-            <div class="corner-1"></div>
-            <div class="corner-2"></div>    
-          </div>  -->                 
-
-        </div>
-
-
-
-
-
+      <section id="lab" class="skills">
+          <article>
+              <div class="lab_item">
+                  <div class="hexagon hexagon2">
+                      <div class="hexagon-in1">
+                          <div class="hexagon-in2">
+                            <img src="images/skills/rails-badge.png" alt="">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="lab_item">
+                  <div class="hexagon hexagon2">
+                      <div class="hexagon-in1">
+                          <div class="hexagon-in2">
+                            <img src="images/skills/html5.png" alt="">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="lab_item">
+                  <div class="hexagon hexagon2">
+                      <div class="hexagon-in1">
+                          <div class="hexagon-in2">
+                            <img src="images/skills/css3.png" alt=""> 
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="lab_item">
+                  <div class="hexagon hexagon2">
+                      <div class="hexagon-in1">
+                          <div class="hexagon-in2">
+                            <img src="images/skills/js-badge.png" alt="">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="lab_item">
+                  <div class="hexagon hexagon2">
+                      <div class="hexagon-in1">
+                          <div class="hexagon-in2">
+                            <img src="images/skills/coffeescript-badge.png" alt="">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="lab_item">
+                  <div class="hexagon hexagon2">
+                      <div class="hexagon-in1">
+                          <div class="hexagon-in2">
+                            <img src="images/skills/drupal-badge.png" alt="">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="lab_item">
+                  <div class="hexagon hexagon2">
+                      <div class="hexagon-in1">
+                          <div class="hexagon-in2">
+                            <img src="images/skills/git-badge.png" alt="">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="lab_item">
+                  <div class="hexagon hexagon2">
+                      <div class="hexagon-in1">
+                          <div class="hexagon-in2">
+                            <img src="images/skills/jquery-badge.png" alt="">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="lab_item">
+                  <div class="hexagon hexagon2">
+                      <div class="hexagon-in1">
+                          <div class="hexagon-in2">
+                            <img src="images/skills/json-badge.png" alt="">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="lab_item">
+                  <div class="hexagon hexagon2">
+                      <div class="hexagon-in1">
+                          <div class="hexagon-in2">
+                            <img src="images/skills/postgresql-badge.png" alt="">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="lab_item">
+                  <div class="hexagon hexagon2">
+                      <div class="hexagon-in1">
+                          <div class="hexagon-in2">
+                            <img src="images/skills/ruby-badge.png" alt=""> 
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="lab_item">
+                  <div class="hexagon hexagon2">
+                      <div class="hexagon-in1">
+                          <div class="hexagon-in2">
+                            <img src="images/skills/mysql.png" alt=""> 
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="lab_item">
+                  <div class="hexagon hexagon2">
+                      <div class="hexagon-in1">
+                          <div class="hexagon-in2">
+                            <img src="images/skills/backbone-outline.png" alt="">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="lab_item">
+                  <div class="hexagon hexagon2">
+                      <div class="hexagon-in1">
+                          <div class="hexagon-in2">
+                            <img src="images/skills/php.png" alt=""> 
+                          </div>
+                      </div>
+                  </div>
+              </div>      
+        </article>
       </section>
 
 
 
-      <!-- CONTACT ME -->
-
+        <!--////////////////////////////////////
+            CONTACT ME 
+        /////////////////////////////////////-->
+      <a name="contact"></a>
       <h1 class="section-title">CONTACT ME</h1>
       <section class="contact">
         <div class="clearfix">
@@ -440,7 +525,9 @@
 
 
 
-
+  <!--////////////////////////////////////
+      FOOTER
+  /////////////////////////////////////-->
   <footer>
     <!-- <div class="clearfix">
       <div class="sm-col sm-col-12 center p3 relative social">
@@ -465,14 +552,6 @@
     </div>
   </footer>
   
-
-
-
-
-
-
-
-
 
 
 
