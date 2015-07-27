@@ -382,12 +382,16 @@ section article:nth-of-type(even) .text-side  {
   line-height: 100px;
   font-size: 3em;
   background-color: rgb(55, 175, 172);
+  border: 5px solid rgb(55, 175, 172);
   border-radius: 50%;
   opacity: 0;
   transform: scale(0.5);
 }
 
-
+.contact-button:hover {
+  color: #fff;
+  border: 5px solid rgb(255, 255, 255);
+}
 
 
 /***************************

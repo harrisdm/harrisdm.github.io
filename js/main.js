@@ -3,11 +3,25 @@ $(document).ready(function() {
   /*******************************
     Mobile Menu Toggle
   *******************************/
-  $('#toggle-menu').click(function(){
-    $(this).toggleClass('menu-is-active');
+  $("#toggle-menu").click(function(){
+    $(this).toggleClass("menu-is-active");
     $(".mobile-menu").slideToggle();
   });
 
+
+  /*******************************
+    Hide the Mobile Menu if resized
+  *******************************/
+  $(window).on("resize", function() {
+    if(window.innerWidth >= 640) {
+      $("#toggle-menu").removeClass("menu-is-active");
+      $(".mobile-menu").slideUp();
+    }
+  });
+
+
+
+  // TweenMax.staggerFrom("header li", 1, { top:"-200px", opacity:0, delay:0.5, ease:Power4 }, 0.2);
 
   /*******************************
     Menu Scrolling the Page
@@ -19,7 +33,7 @@ $(document).ready(function() {
 
       // get rid of the # sign
       var hash = this.hash.substr(1);
-      console.log(hash);
+      // console.log(hash);
 
       // get the position of the <a name>
       var $toElement = $("a[name="+hash+"]");
@@ -119,9 +133,9 @@ $(document).ready(function() {
     if(direction == "down") {
       TweenMax.staggerTo(".contact-button", 2, {scale:1, opacity:1, delay:0.5, ease:Elastic.easeOut, force3D:true}, 0.2);
     } else {
-      TweenMax.to(".contact-button", 0, {scale:0.5, opacity:0, delay:0.5, ease:Elastic.easeOut, force3D:true}, 0.2);
+      TweenMax.to(".contact-button", 0, {scale:0.5, opacity:0, delay:0.0, ease:Elastic.easeOut, force3D:true}, 0.2);
     }
-  }, { offset: "75%" });
+  }, { offset: "85%" });
 
   
 });
