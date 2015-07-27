@@ -215,6 +215,7 @@ nav ul li:hover{ border-bottom: 3px solid rgb(74, 194, 190); }
   Side Profile
 ***************************/
 .side-profile {
+  position: relative;
   background: url(../images/tile.jpg);
   box-sizing: border-box;
   position: fixed;
@@ -229,12 +230,40 @@ nav ul li:hover{ border-bottom: 3px solid rgb(74, 194, 190); }
 
 .profile-details {
   padding: 1em;
+  overflow: hidden;
 }
 
-.profile-details .profile-img-wrapper {
-  margin: auto;
+.side-profile-img {
+  position: absolute;
+  width: 150px;
+  top: -300px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
+.side-name {
+  position: absolute;
+  width: 90%;
+  top: 250px;
+  left: -500px;
+  transform: translateX(-50%);
+}
+
+.side-tag {
+  position: absolute;
+  width: 90%;
+  top: 350px;
+  left: -500px;
+  transform: translateX(-50%);
+}
+
+.side-button {
+  position: absolute;
+  top: 450px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+}
 
 
 /***************************
@@ -251,7 +280,6 @@ section:nth-of-type(4) { background-color: #f1f1f1; }
 
 .section-title {
   border-left: 5px solid rgb(74, 194, 190);
-  --border-left: 5px solid rgb(55, 175, 172);
   padding-left: 0.5em;
   margin: 0.5em;
   text-transform: uppercase;
@@ -260,7 +288,6 @@ section:nth-of-type(4) { background-color: #f1f1f1; }
 .section-title {
   border-left: 5px solid rgb(55, 175, 172);
   padding-left: 0.5em;
-  --margin: 0.13em 0;
   margin: 0;
   text-transform: uppercase;
   background-color: rgb(74, 194, 190);
