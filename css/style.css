@@ -102,6 +102,34 @@ nav ul li:hover{ border-bottom: 3px solid rgb(74, 194, 190); }
 
 
 /***************************
+  Mobile menu
+***************************/
+.mobile-menu {
+  position: fixed;
+  top: 51px;
+  left: 0;
+  width: 100%;
+  background: rgba(44, 44, 44, 1);
+  display: none;
+  z-index: 150;
+}
+
+.mobile-menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-menu li {
+  list-style: none;
+  padding: 1em 2em;
+}
+
+.mobile-menu li:hover {
+  background: rgba(66, 66, 66, 0.5);
+}
+
+
+/***************************
   Hero Page
 ***************************/
 .hero {
@@ -300,18 +328,24 @@ section article:nth-of-type(even) .text-side  {
 }
 
 .about-sub-title {
+  display: inline-block;
   border-bottom: 3px solid rgb(74, 194, 190);
+  margin-bottom: 15px;
 }
 
 
 /***************************
   Contact Me
 ***************************/
+.button-wrapper {
+  margin: 5em 0;
+}
+
 .contact-button {
   display: inline-block;
   width: 100px;
   height: 100px;
-  margin: 1em 0.2em;
+  margin: 0.2em;
   line-height: 100px;
   font-size: 3em;
   background-color: rgb(55, 175, 172);
@@ -337,10 +371,13 @@ footer {
   background: #343434;
   z-index: 100;
   background: #2c2c2c;
-  min-height: 100px;
+  min-height: 150px;
 }
 
 .copyright {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 
 
@@ -349,10 +386,11 @@ footer {
   Skills
 ***************************/
 .skills { 
-  margin: 0 auto;
   padding-top: 100px;
   margin-bottom: -100px;
 }
+
+.skills article { margin: 0 auto; }
 
 .lab_item {
   width: 160px;
@@ -378,7 +416,6 @@ footer {
   -o-transform: rotate(120deg);
   -ms-transform: rotate(120deg);
   transform: rotate(120deg);
-  cursor: pointer;
 }
 
 .hexagon-in1 {
@@ -420,12 +457,6 @@ footer {
   transition: all 0.5s ease;
 }
 
-#lab article {
-  padding-top: 1em;
-  width: 740px;
-  margin: 0 auto;
-}
-
 .hexagon img {
   max-height: 70%;
   position: relative;
@@ -433,101 +464,46 @@ footer {
   transform: translateY(-50%);
 }
 
-
-
 /**** 4 x 4 ****/
 @media (min-width: 1050px) {
-  #lab article {
-    width: 740px;
-  }
-
-  .lab_item:nth-child(8n+5) {
-    margin-left: 82px;
-  }
-
-  .lab_item:nth-child(n+4) {
-    margin-top: -56px;
-  }
+  .skills article { width: 740px; }
+  .lab_item:nth-child(8n+5) { margin-left: 82px; }
+  .lab_item:nth-child(n+4) { margin-top: -56px; }
 }
-
 
 /**** 4 x 3 ****/
 @media (min-width: 1001px) and (max-width: 1049px) {
-  #lab article {
-    width: 660px;
-  }
-
-  .lab_item:nth-child(7n+5) {
-    margin-left: 82px;
-  }
-
-  .lab_item:nth-child(n+4) {
-    margin-top: -56px;
-  }
+  .skills article { width: 660px; }
+  .lab_item:nth-child(7n+5) { margin-left: 82px; }
+  .lab_item:nth-child(n+4) { margin-top: -56px; }
 }
-
 
 /**** 3 x 3 ****/
 @media (min-width: 801px) and (max-width: 1000px) {
-  #lab article {
-    width: 580px;
-  }
-
-  .lab_item:nth-child(6n+4) {
-    margin-left: 82px;
-  }
-
-  .lab_item:nth-child(n+3) {
-    margin-top: -56px;
-  }
+  .skills article { width: 580px; }
+  .lab_item:nth-child(6n+4) { margin-left: 82px; }
+  .lab_item:nth-child(n+3) { margin-top: -56px; }
 }
-
 
 /**** 3 x 2 ****/
 @media (min-width: 601px) and (max-width: 800px) {
-  #lab article {
-    width: 510px;
-  }
-
-  .lab_item:nth-child(5n+4) {
-    margin-left: 82px;
-  }
-
-  .lab_item:nth-child(n+3) {
-    margin-top: -56px;
-  }
+  .skills article { width: 510px; }
+  .lab_item:nth-child(5n+4) { margin-left: 82px; }
+  .lab_item:nth-child(n+3) { margin-top: -56px; }
 }
-
 
 /**** 2 x 2 ****/
 @media (min-width: 501px) and (max-width: 600px) {
-  #lab article {
-    width: 410px;
-  }
-
-  .lab_item:nth-child(4n+3) {
-    margin-left: 82px;
-  }
-
-  .lab_item:nth-child(n+2) {
-    margin-top: -56px;
-  }
+  .skills article { width: 410px; }
+  .lab_item:nth-child(4n+3) { margin-left: 82px; }
+  .lab_item:nth-child(n+2) { margin-top: -56px; }
 }
-
 
 /**** 2 x 1 ****/
 @media (max-width: 500px) {
-  #lab article {
-    width: 330px;
-  }
-
-  .lab_item:nth-child(3n) {
-    margin-left: 82px;
-  }
-
-  .lab_item:nth-child(n+2) {
-    margin-top: -56px;
-  }
+  .skills article { width: 330px; }
+  .lab_item:nth-child(3n) { margin-left: 82px; }
+  .lab_item:nth-child(n+2) { margin-top: -56px; }
 }
 
 
