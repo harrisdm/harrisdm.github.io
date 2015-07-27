@@ -121,13 +121,19 @@ nav ul li:hover{ border-bottom: 3px solid rgb(74, 194, 190); }
 
 .mobile-menu li {
   list-style: none;
-  padding: 1em 2em;
+  padding: 0.5em 1em;
+  margin: 0.5em 1em;
 }
 
 .mobile-menu li:hover {
   background: rgba(66, 66, 66, 0.5);
 }
 
+.mobile-menu a:hover {
+  color: inherit;
+}
+.mobile-link { border-left: 3px solid rgb(255, 255, 255); }
+.menu-highlight { border-color: rgb(74, 194, 190); }
 
 /***************************
   Hero Page
@@ -377,16 +383,10 @@ section article:nth-of-type(even) .text-side  {
   font-size: 3em;
   background-color: rgb(55, 175, 172);
   border-radius: 50%;
-  transition: transform 0.2s ease-in-out;
+  opacity: 0;
+  transform: scale(0.5);
 }
 
-.contact-button:hover {
-  transform: scale(1.2);
-}
-
-.contact a:hover {
-  color: #fff;
-}
 
 
 

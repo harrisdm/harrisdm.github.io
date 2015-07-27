@@ -1,13 +1,17 @@
 $(document).ready(function() {
 
-  // Mobile menu toggling
+  /*******************************
+    Mobile Menu Toggle
+  *******************************/
   $('#toggle-menu').click(function(){
     $(this).toggleClass('menu-is-active');
     $(".mobile-menu").slideToggle();
   });
 
 
-  // Menu click scrolls down the page
+  /*******************************
+    Menu Scrolling the Page
+  *******************************/
   $("a").click(function() {
 
     // check if it has a hash
@@ -40,8 +44,56 @@ $(document).ready(function() {
 
 
 
+  /*******************************
+    Menu Section Highlighting
+  *******************************/
+  $(".projects").waypoint(function(direction) {
+    $("nav li").removeClass("menu-highlight");
+    $(".mobile-link").removeClass("menu-highlight");
+    if(direction == "down") {
+      $(".projects-link").addClass("menu-highlight");
+    } else {
+      $(".home-link").addClass("menu-highlight");
+    }
+  }, { offset: "50%" });
+
+  $(".about").waypoint(function(direction) {
+    $("nav li").removeClass("menu-highlight");
+    $(".mobile-link").removeClass("menu-highlight");
+    if(direction == "down") {
+      $(".about-link").addClass("menu-highlight");
+    } else {
+      $(".projects-link").addClass("menu-highlight");
+    }
+  }, { offset: "50%" });
+
+  $(".skills").waypoint(function(direction) {
+    $("nav li").removeClass("menu-highlight");
+    $(".mobile-link").removeClass("menu-highlight");
+    if(direction == "down") {
+      $(".skills-link").addClass("menu-highlight");
+    } else {
+      $(".about-link").addClass("menu-highlight");
+    }
+  }, { offset: "50%" });
+
+  $(".contact").waypoint(function(direction) {
+    $("nav li").removeClass("menu-highlight");
+    $(".mobile-link").removeClass("menu-highlight");
+    if(direction == "down") {
+      $(".contact-link").addClass("menu-highlight");
+    } else {
+      $(".skills-link").addClass("menu-highlight");
+    }
+  }, { offset: "50%" });
 
 
+
+
+
+  /*******************************
+    Side profile animation
+  *******************************/
   var $projects = $(".projects");
   $projects.waypoint(function(direction) {
     var t1 = new TimelineLite();
@@ -57,5 +109,19 @@ $(document).ready(function() {
         .to($(".side-name"), 0.5, { left: "-500px" }, "-=1.5");
     }
   }, { offset: "150px" });
+
+
+
+  /*******************************
+    Contact button bouncing
+  *******************************/
+  $(".contact").waypoint(function(direction) {
+    if(direction == "down") {
+      TweenMax.staggerTo(".contact-button", 2, {scale:1, opacity:1, delay:0.5, ease:Elastic.easeOut, force3D:true}, 0.2);
+    } else {
+      TweenMax.to(".contact-button", 0, {scale:0.5, opacity:0, delay:0.5, ease:Elastic.easeOut, force3D:true}, 0.2);
+    }
+  }, { offset: "75%" });
+
   
 });
