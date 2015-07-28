@@ -6,8 +6,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/basscss/6.1.6/basscss.min.css">
+  <!-- <link rel="stylesheet" href="http://d2v52k3cl9vedd.cloudfront.net/basscss/6.1.6/basscss.min.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel='stylesheet' href='css/basscss.min.css'>
   <link rel='stylesheet' href='css/devicons.min.css'>
   <link rel="stylesheet" href="css/style.css">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,300,400' rel='stylesheet' type='text/css'>
@@ -19,13 +20,12 @@
   <header>
     <nav class="right-align">
       <ul class="sm-show h4 m0 p1">
-        <a href="#!" class=""><li>Home</li></a>
-        <a href="#!" class=""><li>Projects</li></a>
-        <a href="#!" class=""><li>About</li></a>
-        <a href="#!" class=""><li>Skills</li></a>
-        <a href="#!" class=""><li>Contact</li></a>
+        <a href="#home"><li class="home-link menu-highlight">Home</li></a>
+        <a href="#projects"><li class="projects-link">Projects</li></a>
+        <a href="#about"><li class="about-link">About</li></a>
+        <a href="#skills"><li class="skills-link">Skills</li></a>
+        <a href="#contact"><li class="contact-link">Contact</li></a>
       </ul>
-      <!-- <i id="toggle-menu" class="fa fa-bars sml-hide"></i> -->
       <a id="toggle-menu" class="sm-hide">
         <div class="inline-block">
           <span class="top"></span>
@@ -35,13 +35,27 @@
       </a>
     </nav>
   </header>
+  
+
+  <!--////////////////////////////////////
+      MOBILE MENU 
+  /////////////////////////////////////-->
+  <div class="mobile-menu">
+    <ul>
+      <a href="#home"><li class="mobile-link home-link menu-highlight">Home</li></a>
+      <a href="#projects"><li class="mobile-link projects-link">Projects</li></a>
+      <a href="#about"><li class="mobile-link about-link">About</li></a>
+      <a href="#skills"><li class="mobile-link skills-link">Skills</li></a>
+      <a href="#contact"><li class="mobile-link contact-link">Contact</li></a>
+    </ul>
+  </div>
 
 
-
-<!-- HERO PAGE -->
-
-  <div class="hero flex flex-center">
-    <!-- <div class="hero-background"></div> -->
+  <!--////////////////////////////////////
+      HERO PAGE 
+  /////////////////////////////////////-->
+  <a name="home"></a>
+  <div class="hero">
     <div class="shade"></div>
 
     <div class="hero-details">
@@ -55,9 +69,9 @@
   </div>
 
 
-
-<!-- SOCIAL MEDIA BAR -->
-
+  <!--////////////////////////////////////
+      SOCIAL MEDIA BAR 
+  /////////////////////////////////////-->
   <div class="social-bar">
     <div class="clearfix">
       <div class="sm-col sm-col-12 center">
@@ -82,17 +96,19 @@
 
   <div class="clearfix">
 
-    <!-- SIDE PROFILE -->
+  <!--////////////////////////////////////
+      SIDE PROFILE
+  /////////////////////////////////////-->
     <aside class="md-show md-col md-col-3">
       <div class="side-profile">
         <div class="profile-details">
-          <div class="profile-img-wrapper">
+          <div class="side-profile-img profile-img-wrapper">
             <div class="profile-img"></div>
           </div>
-          <h1 class="center">Mark Harris</h1>
-          <h2 class="center">Making the web look good inside and out</h2>
-          <div class="center">
-            <a href="#!" class="button button-outline">Hire Me</a>
+          <h1 class="side-name center">Mark Harris</h1>
+          <h2 class="side-tag center">Making the web look good inside and out</h2>
+          <div class="side-button center">
+            <a href="#contact" class="button button-outline">Hire Me</a>
           </div>
         </div>
       </div>&nbsp;
@@ -102,22 +118,23 @@
     <div class="md-col md-col-9">
 
     
-      <!-- PROJECTS -->
-
+        <!--////////////////////////////////////
+            PROJECTS 
+       /////////////////////////////////////-->
+      <a name="projects"></a>
       <h1 class="section-title">PROJECTS</h1>
       <section class="projects">
+
+        <!--////////////////////////////////////
+            PROJECT 1 
+        /////////////////////////////////////-->
         <article class="clearfix">
-          <div class="lg-flex flex-stretch">
-            <div class="flex-auto">
-              <div class="project-img-wrapper">
-                <img src="images/projects/TranExecApp.png" alt="">
-              </div>
-            </div>
-            <div class=" project-text-wrapper">
+          <div class="lg-col lg-col-5 text-side">
+            <div class="project-text-wrapper">
               <h1 class="project-title">TranExec</h1>
               <div class="project-text">
                 <p>
-                  TranExec is an Executive Coaching Management System, that is used to track participants through a series of coaching session and allows appointments to be made in real-time. TranExec is built on Rails and Backbone.js.
+                  TranExec is an Executive Coaching Management System that is used to track participants through a series of coaching sessions and allows appointments to be made in real-time. TranExec is built on Rails and Backbone.js.
                 </p>
                 <div class="dev-tools-wrapper center">
                   <span class="devicons devicons-ruby_on_rails h1"></span>
@@ -133,16 +150,20 @@
               </div>
             </div>
           </div>
+          <div class="lg-col lg-col-7">
+            <div class="project-img-wrapper">
+              <img src="images/projects/TranExecApp.png" alt="TranExec application  screenshot">
+            </div>
+          </div>
         </article>
 
+        <hr>
 
+        <!--////////////////////////////////////
+            PROJECT 2
+        /////////////////////////////////////-->
         <article class="clearfix">
-          <div class="lg-flex flex-stretch">
-            <div class="flex-auto flex-last">
-              <div class="project-img-wrapper">
-                <img src="images/projects/youngHorts.png" alt="">
-              </div>
-            </div>
+          <div class="lg-col lg-col-5 text-side">
             <div class="project-text-wrapper">
               <h1 class="project-title">YoungHorts</h1>
               <div class="project-text">
@@ -162,16 +183,20 @@
               </div>
             </div>
           </div>
+          <div class="lg-col lg-col-7">
+            <div class="project-img-wrapper">
+              <img src="images/projects/youngHorts.png" alt="Young Horticulturists of Australia screenshot">
+            </div>
+          </div>
         </article>
         
+        <hr>
 
+        <!--////////////////////////////////////
+            PROJECT 3
+        /////////////////////////////////////-->
         <article class="clearfix">
-          <div class="lg-flex flex-stretch">
-            <div class="flex-auto">
-              <div class="project-img-wrapper">
-                <img src="images/projects/Airbnb-ish.png" alt="">
-              </div>
-            </div>
+          <div class="lg-col lg-col-5 text-side">
             <div class="project-text-wrapper">
               <h1 class="project-title">Airbnb-ish</h1>
               <div class="project-text">
@@ -191,21 +216,25 @@
               </div>
             </div>
           </div>
+          <div class="lg-col lg-col-7">
+            <div class="project-img-wrapper">
+              <img src="images/projects/Airbnb-ish.png" alt="Airbnb screenshot">
+            </div>
+          </div>
         </article>
 
+        <hr>
 
+        <!--////////////////////////////////////
+            PROJECT 4
+        /////////////////////////////////////-->
         <article class="clearfix">
-          <div class="lg-flex flex-stretch">
-            <div class="flex-auto flex-last">
-              <div class="project-img-wrapper">
-                <img src="images/projects/TicTacToe.png" alt="">
-              </div>
-            </div>
+          <div class="lg-col lg-col-5 text-side">
             <div class="project-text-wrapper">
               <h1 class="project-title">Tic-Tac-Toe</h1>
               <div class="project-text">
                 <p>
-                  My first project on the GA Web Development Imersive program. The task was to build a game of tic-tac-toe using Javascript. Here I work on the game logic and how the user can interact with the website to initiate responses. 
+                  My first project on the GA Web Development Imersive program. The task was to build a game of tic-tac-toe using Javascript. Here I work on game logic and how the user can interact with the website to initiate responses.
                 </p>
                 <div class="dev-tools-wrapper center">
                   <span class="devicons devicons-javascript_badge h1"></span>
@@ -219,274 +248,295 @@
               </div>
             </div>
           </div>
+          <div class="lg-col lg-col-7">
+            <div class="project-img-wrapper">
+              <img src="images/projects/TicTacToe.png" alt="Tic-Tac-Toe screenshot">
+            </div>
+          </div>
         </article>
 
       </section>
 
 
-      <!-- ABOUT ME -->
-
+        <!--////////////////////////////////////
+            ABOUT ME 
+        /////////////////////////////////////-->
+      <a name="about"></a>
       <h1 class="section-title m0">ABOUT ME</h1>
       <section class="about">
-        <div class="clearfix">
-          <div class="sm-col sm-col-8 bubble p3 justify relative">
-            <!-- <p>
-              I'm an up and coming systems and web designer, keen snowboarder and collector of nationalities.
-            </p>
-            <p>
-              After graduating with a Masters’ Degree in Computer Science from Loughborough University in the UK, I travelled to Canada for 6 months to pursue my enjoyment of snowboarding. Well, things change. That short 6 months turned into 7 years and Canadian permanent residency.
-            </p>
-            <p>
-              Although not the life plan I'd intended, I took on the hospitality industry. Working from the bottom to the top I quickly found myself managing a successful restaurant. And with great power came great responsibility. Not only mastering the client-side interaction of hospitality, I also engaged in people management, scheduling, stock control and day-to-day problem solving.
-            </p>
-            <p>
-              I also advanced my computing skills amidst my exploits behind the bar and in the kitchen. Developing an automated reporting system I reduced office labour costs by $11,500 per month across the chain. I also developed a web-based gift certificate management system to track the sale and redemption of over 120,000 items. In addition, a responsive website was built using the Drupal framework although never implemented due to changes in the company.
-            </p>
-            <p>
-              Now I'm leaping back into an IT career with a jump start from the General Assembly Web Development Immersive program. And now living in Australia. 
-            </p> -->
-            <h2>I’m a web developer who likes it all.</h2>
-            <p>From efficient database design and css styling to API implementation and front-end user interaction. I'm a problem solver looking for opportunities to build web applications; learn new technologies; and construct effective tools for end users.
-            </p>
+        <div class="about-text">
+          <h1>I’m a web developer who likes it all.</h1>
+          <p>
+            From efficient database design and CSS styling to API implementation and front-end user interaction. I'm a problem solver looking for opportunities to build web applications; learn new technologies; and construct effective tools for end users.
+          </p>
+          <br>
+
+          <div class="clearfix left-align p2">
+            <div class="sm-col sm-col-4">
+              <div class="h2 about-sub-title">Education</div>
+            </div>
+            <div class="sm-col sm-col-8">
+              <div class="h2">General Assembly</div>
+              <div class="h4">Web Development Immersive</div>
+              <p class="h5">May 2015 - July 2015</p>
+
+              <div class="h2">Loughborough University - UK</div>
+              <div class="h4">Masters' Computer Science</div>
+              <p class="h5">October 2001 - July 2006</p>
+            </div>
           </div>
+
+          <div class="clearfix left-align p2">
+            <div class="sm-col sm-col-4">
+              <div class="h2 about-sub-title">Employment</div>
+            </div>
+            <div class="sm-col sm-col-8">
+              <!-- <div class="h2">Pinnacle People</div>
+              <div class="h4">Hospitality Specialist</div>
+              <p class="h5">August 2014 - April 2015</p> -->
+
+              <div class="h2">Chalkboard Cafe</div>
+              <div class="h4">Server | Barista | PoS Coordinator</div>
+              <p class="h5">February 2014 - July 2014</p>
+
+              <div class="h2">Ric's Grill</div>
+              <div class="h4">Systems &amp; Web Developer</div>
+              <p class="h5">April 2008 - November 2013</p>
+
+              <div class="h2">the mix by Ric's</div>
+              <div class="h4">Operations Manager</div>
+              <p class="h5">April 2007 - November 2013</p>
+
+              <div class="h2">CITB</div>
+              <div class="h4">IT Coordinator</div>
+              <p class="h5">September 2004 - July 2006</p>
+            </div>
+          </div>
+
         </div>
       </section>
 
       
 
-      <!-- SKILLS -->
-
+        <!--////////////////////////////////////
+            SKILLS 
+        /////////////////////////////////////-->
+      <a name="skills"></a>
       <h1 class="section-title">SKILLS</h1>
+
       <section class="skills">
-
-
-        <div class="skills-container">
-          
-          <div class="sm-col-6" style="overflow: hidden;">
-
-          <div class="hex">
-            <img src="images/skills/rails-badge.png" alt="">
-            <div class="corner-1"></div>
-            <div class="corner-2"></div>    
-          </div>
-          
-          <div class="hex">
-            <img src="images/skills/html5.png" alt="">
-            <div class="corner-1"></div>
-            <div class="corner-2"></div>    
-          </div> 
-
-
-          <div class="hex">
-            <img src="images/skills/css3.png" alt="">    
-            <div class="corner-1"></div>
-            <div class="corner-2"></div>    
-          </div>  
-          
-          <div class="hex hex-gap">
-            <img src="images/skills/js-badge.png" alt="">        
-            <div class="corner-1"></div>
-            <div class="corner-2"></div>    
-          </div>
-          
-          <div class="hex"> 
-            <img src="images/skills/coffeescript-badge.png" alt="">
-            <div class="corner-1"></div>
-            <div class="corner-2"></div>    
-          </div>
-          
-          <div class="hex">
-            <img src="images/skills/drupal-badge.png" alt="">     
-            <div class="corner-1"></div>
-            <div class="corner-2"></div>    
-          </div>
-          
-          <div class="hex">
-            <img src="images/skills/git-badge.png" alt="">    
-            <div class="corner-1"></div>
-            <div class="corner-2"></div>    
-          </div>
-
-        </div>
-        <div class="sm-col-6" style="overflow: hidden;">
-          
-          <div class="hex">
-            <img src="images/skills/jquery-badge.png" alt="">     
-            <div class="corner-1"></div>
-            <div class="corner-2"></div>    
-          </div>
-          
-          <div class="hex">
-            <img src="images/skills/json-badge.png" alt="">    
-            <div class="corner-1"></div>
-            <div class="corner-2"></div>    
-          </div>
-          
-          <div class="hex">
-            <img src="images/skills/postgresql-badge.png" alt="">    
-            <div class="corner-1"></div>
-            <div class="corner-2"></div>    
-          </div>  
-          
-          <div class="hex">    
-            <img src="images/skills/ruby-badge.png" alt="">    
-            <div class="corner-1"></div>
-            <div class="corner-2"></div>    
-          </div>
-          
-          <div class="hex">   
-            <img src="images/skills/mysql.png" alt="">  
-            <div class="corner-1"></div>
-            <div class="corner-2"></div>    
-          </div>  
-          
-          <div class="hex">   
-            <img src="images/skills/backbone-outline.png" alt="">    
-            <div class="corner-1"></div>
-            <div class="corner-2"></div>    
-          </div>
-          
-          <div class="hex">   
-            <img src="images/skills/php.png" alt="">    
-            <div class="corner-1"></div>
-            <div class="corner-2"></div>    
-          </div>  
-
-        </div>
-          
-          <!-- <div class="hex hex-gap">   
-            <img src="images/skills/rails-badge.png" alt="">
-            <a href="#"></a>    
-            <div class="corner-1"></div>
-            <div class="corner-2"></div>    
-          </div>
-          
-          <div class="hex">   
-            <img src="images/skills/rails-badge.png" alt="">
-            <a href="#"></a>    
-            <div class="corner-1"></div>
-            <div class="corner-2"></div>    
-          </div>  -->                 
-
-        </div>
-
-
-
-
-
+          <article>
+              <div class="hex">
+                  <div class="hexagon hexagon2">
+                      <div class="hexagon-in1">
+                          <div class="hexagon-in2">
+                            <img src="images/skills/rails-badge.png" alt="Ruby on Rails logo">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="hex">
+                  <div class="hexagon hexagon2">
+                      <div class="hexagon-in1">
+                          <div class="hexagon-in2">
+                            <img src="images/skills/html5.png" alt="HTML5 logo">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="hex">
+                  <div class="hexagon hexagon2">
+                      <div class="hexagon-in1">
+                          <div class="hexagon-in2">
+                            <img src="images/skills/css3.png" alt="CSS3 logo"> 
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="hex">
+                  <div class="hexagon hexagon2">
+                      <div class="hexagon-in1">
+                          <div class="hexagon-in2">
+                            <img src="images/skills/js-badge.png" alt="Javascript logo">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="hex">
+                  <div class="hexagon hexagon2">
+                      <div class="hexagon-in1">
+                          <div class="hexagon-in2">
+                            <img src="images/skills/coffeescript-badge.png" alt="Coffeescript logo">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="hex">
+                  <div class="hexagon hexagon2">
+                      <div class="hexagon-in1">
+                          <div class="hexagon-in2">
+                            <img src="images/skills/drupal-badge.png" alt="Drupal logo">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="hex">
+                  <div class="hexagon hexagon2">
+                      <div class="hexagon-in1">
+                          <div class="hexagon-in2">
+                            <img src="images/skills/git-badge.png" alt="Git logo">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="hex">
+                  <div class="hexagon hexagon2">
+                      <div class="hexagon-in1">
+                          <div class="hexagon-in2">
+                            <img src="images/skills/jquery-badge.png" alt="jQuery logo">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="hex">
+                  <div class="hexagon hexagon2">
+                      <div class="hexagon-in1">
+                          <div class="hexagon-in2">
+                            <img src="images/skills/json-badge.png" alt="JSON logo">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="hex">
+                  <div class="hexagon hexagon2">
+                      <div class="hexagon-in1">
+                          <div class="hexagon-in2">
+                            <img src="images/skills/postgresql-badge.png" alt="Postgresql logo">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="hex">
+                  <div class="hexagon hexagon2">
+                      <div class="hexagon-in1">
+                          <div class="hexagon-in2">
+                            <img src="images/skills/ruby-badge.png" alt="Ruby logo"> 
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="hex">
+                  <div class="hexagon hexagon2">
+                      <div class="hexagon-in1">
+                          <div class="hexagon-in2">
+                            <img src="images/skills/mysql.png" alt="MySQL logo"> 
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="hex">
+                  <div class="hexagon hexagon2">
+                      <div class="hexagon-in1">
+                          <div class="hexagon-in2">
+                            <img src="images/skills/backbone-outline.png" alt="Backbone logo">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="hex">
+                  <div class="hexagon hexagon2">
+                      <div class="hexagon-in1">
+                          <div class="hexagon-in2">
+                            <img src="images/skills/php.png" alt="PHP logo"> 
+                          </div>
+                      </div>
+                  </div>
+              </div>      
+              <div class="hex">
+                  <div class="hexagon hexagon2">
+                      <div class="hexagon-in1">
+                          <div class="hexagon-in2">
+                            <img src="images/skills/heroku.svg" alt="Heroku logo"> 
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="hex">
+                  <div class="hexagon hexagon2">
+                      <div class="hexagon-in1">
+                          <div class="hexagon-in2">
+                            <img src="images/skills/sass.svg" alt="Sass logo"> 
+                          </div>
+                      </div>
+                  </div>
+              </div>      
+        </article>
       </section>
 
 
 
-      <!-- CONTACT ME -->
-
+        <!--////////////////////////////////////
+            CONTACT ME 
+        /////////////////////////////////////-->
+      <a name="contact"></a>
       <h1 class="section-title">CONTACT ME</h1>
       <section class="contact">
-        <div class="clearfix">
-          <!-- <div class="sm-col sm-col-6 p3">
-            <form action="" method="post">
-              <input type="text" name="name" id="name" value="" placeholder="Name *" class="block col-12 mb1 field">
-              <!-- <input type="text" name="website" id="website" value="" placeholder="WebSite" class="block col-12 mb1 field"> -->
-              <!--<input type="text" name="email" id="email" value="" placeholder="Email *" class="block col-12 mb1 field">
-              <input type="text" name="subject" id="subject" value="" placeholder="Subject " class="block col-12 mb1 field">
-              <textarea rows="5" cols="45" id="message" placeholder="Message *" name="message" class="block col-12 mb1 field"></textarea>
-              <div id="submit" class="button button-outline">Send Message</div>
-            </form>
-          </div> -->
+        <div class="clearfix center button-wrapper">
+          <div class="sm-col sm-col-2">&nbsp;</div>
+          <div class="sm-col sm-col-2">
+            <a href="https://github.com/harrisdm" target="_blank">
+              <div class="contact-button">
+                <i class="fa fa-github"></i>
+              </div>  
+            </a>
+          </div>
+          <div class="sm-col sm-col-2">
+            <a href="http://www.linkedin.com/profile/view?id=402766673" target="_blank">
+              <div class="contact-button">
+                <i class="fa fa-linkedin"></i>
+              </div>
+            </a>
+          </div>
+          <div class="sm-col sm-col-2">
+            <a href="http://www.twitter.com/harrisdm_" target="_blank">
+              <div class="contact-button">
+                <i class="fa fa-twitter"></i>
+              </div>
+            </a>
+          </div>
+          <div class="sm-col sm-col-2">
+            <a href="mailto:harrisdm@hotmail.com" target="_blank">
+              <div class="contact-button">
+                <i class="fa fa-at"></i>
+              </div>
+            </a>
+          </div>
+          <div class="sm-col sm-col-2">&nbsp;</div>   
         </div>
-
-      <div class="clearfix center">
-        <div class="sm-col sm-col-2">&nbsp;</div>
-        <div class="sm-col sm-col-2">
-          <a href="https://github.com/harrisdm" target="_blank">
-            <div class="contact-button">
-              <i class="fa fa-github"></i>
-            </div>  
-          </a>
-        </div>
-        <div class="sm-col sm-col-2">
-          <a href="http://www.linkedin.com/profile/view?id=402766673" target="_blank">
-            <div class="contact-button">
-              <i class="fa fa-linkedin"></i>
-            </div>
-          </a>
-        </div>
-        <div class="sm-col sm-col-2">
-          <a href="http://www.twitter.com/harrisdm_" target="_blank">
-            <div class="contact-button">
-              <i class="fa fa-twitter"></i>
-            </div>
-          </a>
-        </div>
-        <div class="sm-col sm-col-2">
-          <a href="mailto:harrisdm@hotmail.com" target="_blank">
-            <div class="contact-button">
-              <i class="fa fa-at"></i>
-            </div>
-          </a>
-        </div>
-        <div class="sm-col sm-col-2">&nbsp;</div>
-          
-          
-          
-          
-    </div>
-
       </section>
 
+
+      <!--////////////////////////////////////
+          FOOTER
+      /////////////////////////////////////-->
+      <footer>
+        <div class="clearfix copyright">
+          <div class="sm-col sm-col-12 p2">
+            &copy; 2015 Mark Harris
+          </div>
+        </div>
+      </footer>
       
-    </div>
-  </div>
-
-
-
-
-  <footer>
-    <!-- <div class="clearfix">
-      <div class="sm-col sm-col-12 center p3 relative social">
-          <a href="https://github.com/harrisdm" target="_blank" class="button button-outline m2">
-            <i class="fa fa-github"></i>
-          </a>
-          <a href="http://www.linkedin.com/profile/view?id=402766673" target="_blank" class="button button-outline m2">
-            <i class="fa fa-linkedin"></i>
-          </a>
-          <a href="http://www.twitter.com/harrisdm_" target="_blank" class="button button-outline m2">
-            <i class="fa fa-twitter"></i>
-          </a>
-          <a href="mailto:harrisdm@hotmail.com" target="_blank" class="button button-outline m2">
-            <i class="fa fa-at"></i>
-          </a>
-      </div>
-    </div> -->
-    <div class="clearfix copyright">
-      <div class="sm-col sm-col-12 p2 center">
-        &copy; 2015 Mark Harris
-      </div>
-    </div>
-  </footer>
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </div>    <!-- main content -->
+  </div>    <!-- clearfix -->
 
 
   <script src="js/jquery.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-  <script src="js/main.js"></script>
+  <!-- //<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>-->
+  <script src="js/TweenMax.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
   <script src="js/jquery.fittext.js"></script>
+  <script src="js/main.js"></script>
   <script>
     jQuery(".hero-text").fitText();
   </script>
