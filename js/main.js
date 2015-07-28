@@ -20,20 +20,16 @@ $(document).ready(function() {
   });
 
 
-
-  // TweenMax.staggerFrom("header li", 1, { top:"-200px", opacity:0, delay:0.5, ease:Power4 }, 0.2);
-
   /*******************************
-    Menu Scrolling the Page
+    Auto Scrolling the Menu
   *******************************/
-  $("a").click(function() {
+  $("a").on("click", function() {
 
     // check if it has a hash
     if(this.hash) {
 
       // get rid of the # sign
       var hash = this.hash.substr(1);
-      // console.log(hash);
 
       // get the position of the <a name>
       var $toElement = $("a[name="+hash+"]");
@@ -49,7 +45,7 @@ $(document).ready(function() {
     }
   });
 
-
+  // If page is loaded with a hash
   if(location.hash) {
     var hash = location.hash;
     window.scroll(0,0);
@@ -57,10 +53,10 @@ $(document).ready(function() {
   }
 
 
-
   /*******************************
-    Menu Section Highlighting
+    Menu Highlighting on Scroll
   *******************************/
+  // Projects Section
   $(".projects").waypoint(function(direction) {
     $("nav li").removeClass("menu-highlight");
     $(".mobile-link").removeClass("menu-highlight");
@@ -71,6 +67,7 @@ $(document).ready(function() {
     }
   }, { offset: "50%" });
 
+  // About Section
   $(".about").waypoint(function(direction) {
     $("nav li").removeClass("menu-highlight");
     $(".mobile-link").removeClass("menu-highlight");
@@ -81,6 +78,7 @@ $(document).ready(function() {
     }
   }, { offset: "50%" });
 
+  // Skills Section
   $(".skills").waypoint(function(direction) {
     $("nav li").removeClass("menu-highlight");
     $(".mobile-link").removeClass("menu-highlight");
@@ -91,6 +89,7 @@ $(document).ready(function() {
     }
   }, { offset: "50%" });
 
+  // Contact Section
   $(".contact").waypoint(function(direction) {
     $("nav li").removeClass("menu-highlight");
     $(".mobile-link").removeClass("menu-highlight");
@@ -102,9 +101,6 @@ $(document).ready(function() {
   }, { offset: "50%" });
 
 
-
-
-
   /*******************************
     Side profile animation
   *******************************/
@@ -112,15 +108,18 @@ $(document).ready(function() {
   $projects.waypoint(function(direction) {
     var t1 = new TimelineLite();
     if(direction == "down") {
-      t1.to($(".side-profile-img"), 0.5, { top: "100px" })
-        .to($(".side-name"), 0.5, { left: "50%" }, "-=0.3")
-        .to($(".side-tag"), 0.5, { left: "50%" }, "-=0.3")
-        .to($(".side-button"), 0.5, { opacity: 1 }, "-=0.3");
+      t1.to($(".side-profile-img, .side-name, .side-tag"), 0, { opacity: 1 })
+        .to($(".side-profile-img"), 0.4, { top: "100px" }, "-=0.2")
+        .to($(".side-name"), 0.4, { left: "50%" }, "-=0.3")
+        .to($(".side-tag"), 0.4, { left: "50%" }, "-=0.3")
+        .to($(".side-button"), 0.4, { opacity: 1 }, "-=0.1");
     } else {
-      t1.to($(".side-profile-img"), 0.5, { top: "-300px" })
-        .to($(".side-button"), 0.5, { opacity: 0 }, "-=0.5")
-        .to($(".side-tag"), 0.5, { left: "-500px" }, "-=1.0")
-        .to($(".side-name"), 0.5, { left: "-500px" }, "-=1.5");
+      t1.to($(".side-profile-img, .side-name, .side-tag, .side-button"), 0.5, { opacity: 0 })
+        .add("move", 1)
+        .to($(".side-profile-img"), 0, { top: "-300px" }, "move")
+        .to($(".side-button"), 0, { opacity: 0 }, "move")
+        .to($(".side-tag"), 0, { left: "-500px" }, "move")
+        .to($(".side-name"), 0, { left: "-500px" }, "move");
     }
   }, { offset: "150px" });
 
@@ -131,7 +130,7 @@ $(document).ready(function() {
   *******************************/
   $(".contact").waypoint(function(direction) {
     if(direction == "down") {
-      TweenMax.staggerTo(".contact-button", 2, {scale:1, opacity:1, delay:0.5, ease:Elastic.easeOut, force3D:true}, 0.2);
+      TweenMax.staggerTo(".contact-button", 2, {scale:1, opacity:1, delay:0.2, ease:Elastic.easeOut, force3D:true}, 0.2);
     } else {
       TweenMax.to(".contact-button", 0, {scale:0.5, opacity:0, delay:0.0, ease:Elastic.easeOut, force3D:true}, 0.2);
     }
